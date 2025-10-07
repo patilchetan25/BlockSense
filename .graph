@@ -1,0 +1,41 @@
+
+BlockSense/
+│
+├── client/                   # Frontend (Next.js or React)
+│   ├── public/                # Static files (logos, icons)
+│   ├── src/
+│   │   ├── components/        # UI components (Navbar, Charts, etc.)
+│   │   ├── pages/             # Routes (if using Next.js)
+│   │   ├── hooks/             # Custom React hooks
+│   │   ├── context/           # Global state providers
+│   │   ├── utils/             # Helper functions
+│   │   ├── styles/            # Tailwind/global CSS
+│   │   └── services/          # API calls to backend
+│   ├── package.json
+│   └── README.md
+│
+├── server/                   # Backend (Node.js + Express)
+│   ├── src/
+│   │   ├── config/            # DB connection, env settings
+│   │   ├── models/            # Mongoose schemas (User, Portfolio, etc.)
+│   │   ├── routes/            # API routes (auth, crypto, portfolio)
+│   │   ├── controllers/       # Route logic
+│   │   ├── middleware/        # Auth, error handlers
+│   │   ├── services/          # External API integrations (CoinGecko, etc.)
+│   │   ├── utils/             # Helpers, constants
+│   │   └── app.js             # Express app entry
+│   ├── package.json
+│   └── .env
+│
+├── ai-engine/                # Python ML models
+│   ├── data/                 # Training data
+│   ├── models/               # Saved ML models
+│   ├── scripts/              # Data preprocessing, training, prediction
+│   ├── api/                  # Flask/FastAPI wrapper to expose predictions
+│   ├── requirements.txt
+│   └── README.md
+│
+├── docker-compose.yml
+├── .gitignore
+├── README.md
+└── LICENSE
